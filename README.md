@@ -1,3 +1,78 @@
+# Family Tree API Using Flask
+
+*Coding Challenge to create a Family Tree API using Flask, SQLAlchemy and pytest.*
+
+## Instructions
+
+### Installation Process
+1. `git clone` repo
+
+##### Create virtual environment
+
+if you want to create virtual environment and install pipenv in created python virtual env
+
+```bash
+virtualenv -p python3.7 python_env
+```
+OR
+```bash
+pip3 install virtualenv
+python3.7 -m virtualenv python_env
+source python_env/bin/activate
+pip install pipenv
+
+```
+
+To deactivate virtual python_env
+```bash
+deactivate
+```
+
+##### Running the service in a virtual environment
+If you are using python 3.7 you will need to run
+```bash
+pipenv run pip install pip==18.0
+```
+
+To install dependencies you will need to run
+```bash
+pipenv install
+```
+
+Once dependencies are installed you can run the service with
+```bash
+pipenv run python manage.py runserver
+```
+
+positional arguments:
+  {runserver,db,shell}
+    runserver           Runs the Flask development server i.e. app.run()
+    db                  Perform database migrations
+    shell               Runs a Python shell inside Flask application context.
+
+
+
+To run test cases (pytest)
+```bash
+pipenv run pytest
+```
+
+test-pdb
+```bash
+pipenv run pytest --pdb
+```
+
+To check test coverage
+```bash
+pipenv run pytest --cov
+```
+
+To generate test coverage report in html
+```bash
+pipenv run pytest --cov --cov-report html && open ./htmlcov/index.html
+```
+
+
 # be-coding-challenge
 
 ### Expectations
@@ -25,26 +100,3 @@ When thinking about relations between people the API should be able to provide t
 - For a given person list all their children
 - For a given person list all of their grandparents
 - For a given person list all of their cousins
-
-### Getting started
-
-##### Running the service in a virtual environment
-If you are using python 3.7 you will need to run
-```bash
-pipenv run pip install pip==18.0
-```
-
-To install dependencies you will need to run
-```bash
-pipenv install
-```
-
-Once dependencies are installed you can run the service with
-```bash
-pipenv run python manage.py
-```
-or
-```bash
-pipenv shell
-python server.py
-```
