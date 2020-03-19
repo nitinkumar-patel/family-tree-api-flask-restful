@@ -1,2 +1,12 @@
 .idea/
 .env
+.pytest_cache/*
+python_env/*
+local_files/*
+migrations/*
+db.sqlite
+.pytest_cache/*
+htmlcov/*
+migrations/*
+.coverage
+db.sqlite
