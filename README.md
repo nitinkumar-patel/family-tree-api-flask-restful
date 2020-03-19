@@ -100,3 +100,62 @@ When thinking about relations between people the API should be able to provide t
 - For a given person list all their children
 - For a given person list all of their grandparents
 - For a given person list all of their cousins
+
+
+## API Endpoints
+
+### `/api/v1/persons/`
+
+- *GET*
+- *POST*
+
+### `/api/v1/persons/{person_id}`
+
+- *GET*
+- *PUT*
+- *DELETE*
+
+### `persons/{person_id}/siblings`
+
+- *GET*
+
+### `persons/{person_id}/parents`
+
+- *GET*
+
+### `persons/{person_id}/children`
+
+- *GET*
+
+### `persons/{person_id}/grandparents`
+
+- *GET*
+
+### `persons/{person_id}/cousins`
+
+- *GET*
+
+### `persons/?page={page_no}`
+
+- *GET*
+
+### `persons/?firstname={first_name}`
+
+- *GET*
+
+### `persons/?state={state}`
+
+- *GET*
+
+### `persons/?firstname={first_name}&state={state}`
+
+- *GET*
+
+
+
+
+## Resources
+
+- [Flask Docs: App Factories](http://flask.pocoo.org/docs/1.0/patterns/appfactories/)
+- [Flask Mega Tutorial: App Factories](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xv-a-better-application-structure)
+- [Genealogy Data Model](http://www.databaseanswers.org/data_models/genealogy/index.htm)
