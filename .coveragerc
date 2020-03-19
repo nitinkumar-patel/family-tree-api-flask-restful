@@ -1,0 +1,9 @@
+[report]
+fail_under = 70
+
+[run]
+include = ./family_tree/*
+omit =
+    */__init__.py
+    test/*
+    python_env/*
